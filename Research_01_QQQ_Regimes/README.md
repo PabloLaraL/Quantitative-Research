@@ -1,28 +1,29 @@
-# Research 01 — QQQ Market Regimes
+# Research 01 — Regímenes de Mercado en QQQ
 
-## Research Question
+## Pregunta de Investigación
 
-Can unsupervised market regimes and supervised regime forecasts provide exploitable information for systematic trading?
+¿Los regímenes de mercado identificados mediante aprendizaje no supervisado y sus pronósticos supervisados contienen información explotable para sistemas de trading?
 
-## Methodology
+## Metodología
 
-* UMAP dimensionality reduction
-* HDBSCAN clustering
-* Meta-state construction
-* XGBoost forecasting
-* Feature engineering
-* Signal analysis
-* Signature analysis
-* Backtesting
+* Reducción de dimensionalidad con UMAP
+* Clustering mediante HDBSCAN
+* Construcción de meta-estados de mercado
+* Forecast supervisado con XGBoost
+* Ingeniería de variables
+* Análisis de señales
+* Análisis de signatures
+* Backtesting y validación
 
-## Main Findings
+## Hallazgos Principales
 
-* Market regimes contain meaningful economic information.
-* Regime forecasts show statistical predictive power.
-* Forecasts alone do not generate robust alpha.
-* Persistence-based signals appear more useful than regime-transition signals.
-* Several signal signatures warrant further investigation.
+* Los regímenes contienen información económica relevante.
+* El modelo de forecast mostró capacidad predictiva estadística.
+* El forecast por sí solo no generó alpha robusto.
+* Las señales de persistencia mostraron mayor utilidad que las señales de transición entre regímenes.
+* Se identificaron configuraciones de señales (signatures) con comportamiento consistente que justifican investigación adicional.
 
-## Status
+## Estado
 
-Completed (Phase 1)
+Completado (Fase 1)
+
