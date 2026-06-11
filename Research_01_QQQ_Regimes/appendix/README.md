@@ -35,7 +35,7 @@ Este experimento busca determinar si dichas diferencias corresponden a:
 
 Este estudio funciona como apéndice metodológico del proyecto:
 
-**Research 01 — QQQ Market Regimes**
+**Research 01 — QQQ_Regime_Research**
 
 Su propósito es evaluar la robustez de la metodología utilizada para construir los estados de mercado.
 
