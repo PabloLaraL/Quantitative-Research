@@ -1,4 +1,5 @@
-Reproducibilidad de Regímenes de Mercado
+#Reproducibilidad de Regímenes de Mercado
+
 Objetivo
 Investigar la estabilidad y reproducibilidad de los regímenes de mercado obtenidos mediante UMAP + HDBSCAN sobre datos semanales de QQQ.
 
