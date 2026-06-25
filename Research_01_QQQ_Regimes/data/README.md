@@ -70,7 +70,8 @@ Contiene artefactos como:
 - `or_trades.pkl`
 - `or_panels.pkl`
 - `metadata.pkl`
-- `MANIFEST.json`
+- `model_artifacts.joblib`
+- `scored_history`
 
 Estos archivos representan el estado operativo sellado del proyecto y son utilizados por las etapas posteriores para garantizar consistencia y reproducibilidad.
 
