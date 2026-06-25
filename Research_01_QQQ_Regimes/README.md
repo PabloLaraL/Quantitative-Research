@@ -2,9 +2,7 @@
 
 ## Objetivo
 
-Investigar si los regímenes de mercado, sus probabilidades pronosticadas
-y variables derivadas de tendencia, volatilidad y estructura contienen
-información predictiva útil para evaluar retornos futuros en QQQ.
+Investigar si los regímenes de mercado, sus probabilidades pronosticadas y variables derivadas de tendencia, volatilidad y estructura contienen información predictiva útil para evaluar retornos futuros en QQQ.
 
 ---
 
@@ -29,7 +27,7 @@ información predictiva útil para evaluar retornos futuros en QQQ.
 * Las señales de persistencia mostraron más utilidad que las señales de transición.
 * El mejor baseline operativo surgió de estructuras simples de tendencia y momentum.
 
-Estado: ✅ Completado
+**Estado:** ✅ Completado
 
 ---
 
@@ -54,7 +52,7 @@ Estado: ✅ Completado
 * Los Event Studies mostraron que las transiciones de entrada contienen más información que las semanas consecutivas dentro del mismo estado.
 * Los scores compuestos mejoraron sustancialmente la capacidad de ranking respecto a factores individuales.
 
-Estado: ✅ Completado
+**Estado:** ✅ Completado
 
 ---
 
@@ -77,22 +75,48 @@ Estado: ✅ Completado
 * La validación final aportó evidencia favorable para el AND Champion, considerando la limitación del reducido número de trades.
 * Se definieron dos estrategias candidatas para la etapa operativa del proyecto.
 
-Estado: ✅ Completado
+**Estado:** ✅ Completado
+
+---
+
+## Parte 3.5 — Construcción del Dataset Operativo
+
+### Metodología
+
+* Integración de los resultados validados de las Partes 1 y 2.
+* Construcción del universo operativo a partir de las señales seleccionadas durante la investigación.
+* Generación de las operaciones correspondientes a los campeones OR y AND.
+* Construcción de paneles individuales por operación.
+* Validación de integridad y consistencia de los resultados.
+* Persistencia del dataset operativo para las etapas posteriores del proyecto.
+
+### Hallazgos principales
+
+* Se consolidó un único dataset operativo a partir de los resultados obtenidos durante la investigación.
+* Las señales validadas pudieron transformarse en un conjunto consistente de operaciones individuales.
+* Se estableció una estructura estandarizada para organizar las operaciones, paneles y metadata generada.
+* El proceso garantiza coherencia entre el universo operativo y los resultados derivados de la investigación.
+
+**Estado:** ✅ Completado
 
 ---
 
 ## Estructura del Proyecto
 
-* QQQ_Regime_Research.ipynb
+* **QQQ_Regime_Research.ipynb**
 
   * Parte 1: Regímenes y Forecast
 
-* QQQ_Regime_Research_Part2.ipynb
+* **QQQ_Regime_Research_Part2.ipynb**
 
   * Parte 2: Factores, Estados y Scores
 
-* QQQ_Regime_Research_Part3.ipynb
+* **QQQ_Regime_Research_Part3.ipynb**
 
   * Parte 3: Validación Cuantitativa y Campeón Final
+
+* **QQQ_Regime_Research_Part3_5.ipynb**
+
+  * Parte 3.5: Construcción del Dataset Operativo
 
 ---
