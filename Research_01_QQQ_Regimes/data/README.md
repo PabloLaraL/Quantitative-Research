@@ -71,7 +71,6 @@ Contiene artefactos como:
 - `or_panels.pkl`
 - `metadata.pkl`
 - `MANIFEST.json`
-- `model_artifacts.joblib` *(cuando la Parte 1 incorpore su persistencia definitiva)*
 
 Estos archivos representan el estado operativo sellado del proyecto y son utilizados por las etapas posteriores para garantizar consistencia y reproducibilidad.
 
