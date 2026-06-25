@@ -115,7 +115,7 @@ Investigar si los regímenes de mercado, sus probabilidades pronosticadas y vari
 
   * Parte 3: Validación Cuantitativa y Campeón Final
 
-* **QQQ_Regime_Research_Parte 3.5.ipynb**
+* **QQQ_Regime_Research_Parte 3_5.ipynb**
 
   * Parte 3.5: Construcción del Dataset Operativo
 
