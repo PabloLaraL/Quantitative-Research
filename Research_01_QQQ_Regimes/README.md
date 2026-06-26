@@ -132,11 +132,11 @@ Investigar si los regímenes de mercado, sus probabilidades pronosticadas y vari
 
 Parte 1: Regímenes y Forecast
 
-**QQQ_Regime_Research_Parte_2.ipynb**
+**QQQ_Regime_Research_Parte 2.ipynb**
 
 Parte 2: Factores, Estados y Scores
 
-**QQQ_Regime_Research_Parte_3.ipynb**
+**QQQ_Regime_Research_Parte 3.ipynb**
 
 Parte 3: Validación Cuantitativa y Campeón Final
 
@@ -144,7 +144,7 @@ Parte 3: Validación Cuantitativa y Campeón Final
 
 Parte 3.5: Construcción del Dataset Operativo
 
-**QQQ_Regime_Research_Parte_4.ipynb**
+**QQQ_Regime_Research_Parte 4.ipynb**
 
 Parte 4: Diagnóstico Cuantitativo de las Operaciones
 
