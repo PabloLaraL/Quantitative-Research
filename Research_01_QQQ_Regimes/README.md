@@ -6,9 +6,9 @@ Investigar si los regímenes de mercado, sus probabilidades pronosticadas y vari
 
 ---
 
-## Parte 1 — Descubrimiento y Forecast de Regímenes
+# Parte 1 — Descubrimiento y Forecast de Regímenes
 
-### Metodología
+## Metodología
 
 * Reducción de dimensionalidad mediante UMAP
 * Clustering mediante HDBSCAN
@@ -19,7 +19,7 @@ Investigar si los regímenes de mercado, sus probabilidades pronosticadas y vari
 * Construcción de signatures
 * Backtesting y validación
 
-### Hallazgos principales
+## Hallazgos principales
 
 * Los regímenes contienen información económica relevante.
 * El forecast mostró capacidad predictiva estadística.
@@ -31,9 +31,9 @@ Investigar si los regímenes de mercado, sus probabilidades pronosticadas y vari
 
 ---
 
-## Parte 2 — Investigación de Factores y State Scores
+# Parte 2 — Investigación de Factores y State Scores
 
-### Metodología
+## Metodología
 
 * Análisis Spearman de factores individuales
 * Optimización de horizonte predictivo
@@ -44,7 +44,7 @@ Investigar si los regímenes de mercado, sus probabilidades pronosticadas y vari
 * Construcción de scores compuestos
 * Optimización de pesos mediante grid search
 
-### Hallazgos principales
+## Hallazgos principales
 
 * Los factores más informativos fueron ATR relativo, tendencia y drawdown.
 * Las combinaciones de factores mostraron más información que los factores individuales.
@@ -56,9 +56,9 @@ Investigar si los regímenes de mercado, sus probabilidades pronosticadas y vari
 
 ---
 
-## Parte 3 — Validación Cuantitativa y Campeón Final
+# Parte 3 — Validación Cuantitativa y Campeón Final
 
-### Metodología
+## Metodología
 
 * Bootstrap y validación temporal
 * Ranking y leaderboard de factores
@@ -67,7 +67,7 @@ Investigar si los regímenes de mercado, sus probabilidades pronosticadas y vari
 * Robustness Grid y Rolling Backtests
 * Bootstrap de trades, Monte Carlo y Leave-One-Out
 
-### Hallazgos principales
+## Hallazgos principales
 
 * DD+ATR fue el factor compuesto más robusto del Universo A y State Score Opt el mejor candidato del Universo B.
 * Los ensambles AND y OR mostraron perfiles operativos distintos y complementarios.
@@ -79,18 +79,18 @@ Investigar si los regímenes de mercado, sus probabilidades pronosticadas y vari
 
 ---
 
-## Parte 3.5 — Construcción del Dataset Operativo
+# Parte 3.5 — Construcción del Dataset Operativo
 
-### Metodología
+## Metodología
 
 * Integración de los resultados validados de las Partes 1 y 2.
 * Construcción del universo operativo a partir de las señales seleccionadas durante la investigación.
-* Generación de las operaciones correspondientes a los campeones OR y AND.
+* Generación de las operaciones correspondientes a los Champions OR y AND.
 * Construcción de paneles individuales por operación.
 * Validación de integridad y consistencia de los resultados.
 * Persistencia del dataset operativo para las etapas posteriores del proyecto.
 
-### Hallazgos principales
+## Hallazgos principales
 
 * Se consolidó un único dataset operativo a partir de los resultados obtenidos durante la investigación.
 * Las señales validadas pudieron transformarse en un conjunto consistente de operaciones individuales.
@@ -101,22 +101,51 @@ Investigar si los regímenes de mercado, sus probabilidades pronosticadas y vari
 
 ---
 
-## Estructura del Proyecto
+# Parte 4 — Diagnóstico Cuantitativo de las Operaciones
 
-* **QQQ_Regime_Research.ipynb**
+## Metodología
 
-  * Parte 1: Regímenes y Forecast
+* Construcción del universo de investigación a partir del Research State.
+* Caracterización descriptiva de las operaciones de los Champions OR y AND.
+* Clasificación por duración y rentabilidad.
+* Análisis de variables internas al momento de entrada.
+* Estudio de la evolución temporal de las operaciones.
+* Evaluación de hipótesis sobre holding, régimen, mercados laterales y pérdidas extremas.
+* Corroboración de evidencia mediante el AND Champion.
+* Integración de resultados mediante análisis temporal sobre la serie histórica del QQQ.
 
-* **QQQ_Regime_Research_Parte 2.ipynb**
+## Hallazgos principales
 
-  * Parte 2: Factores, Estados y Scores
+* Las operaciones largas continúan mostrando resultados finales muy distintos pese a compartir duraciones similares.
+* La mayor parte de las diferencias entre operaciones exitosas y perdedoras no aparece en la entrada, sino que emerge progresivamente durante la operación.
+* El holding y el clasificador de régimen no constituyen una explicación suficiente para las operaciones largas perdedoras.
+* Drawdown y, de forma complementaria, ATR concentraron la evidencia más consistente del deterioro observado durante la vida de las operaciones.
+* La investigación desplazó el foco desde la optimización de entradas hacia el estudio del proceso de salida y gestión dinámica de operaciones.
 
-* **QQQ_Regime_Research_Parte 3.ipynb**
+**Estado:** ✅ Completado
 
-  * Parte 3: Validación Cuantitativa y Campeón Final
+---
 
-* **QQQ_Regime_Research_Parte 3_5.ipynb**
+# Estructura del Proyecto
 
-  * Parte 3.5: Construcción del Dataset Operativo
+**QQQ_Regime_Research.ipynb**
+
+Parte 1: Regímenes y Forecast
+
+**QQQ_Regime_Research_Parte_2.ipynb**
+
+Parte 2: Factores, Estados y Scores
+
+**QQQ_Regime_Research_Parte_3.ipynb**
+
+Parte 3: Validación Cuantitativa y Campeón Final
+
+**QQQ_Regime_Research_Parte_3_5.ipynb**
+
+Parte 3.5: Construcción del Dataset Operativo
+
+**QQQ_Regime_Research_Parte_4.ipynb**
+
+Parte 4: Diagnóstico Cuantitativo de las Operaciones
 
 ---
